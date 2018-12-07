@@ -3,7 +3,6 @@ const BigNumber = require('bignumber.js');
 
 let spo;
 const owner = web3.eth.accounts[0];
-const nonOwner = web3.eth.accounts[5];
 
 contract('SPO smart contract', () => {
   before(async () => {
