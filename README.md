@@ -1,2 +1,3 @@
 # sparrow-token
-SPO
+Sparrow Options (SPO)
+

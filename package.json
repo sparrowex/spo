@@ -1,0 +1,21 @@
+{
+  "name": "SPO",
+  "version": "1.0.0",
+  "description": "Sparrow Options Token",
+  "author": "U-Zyn Chua <uzyn@zynesis.com>",
+  "license": "MIT",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.0.0"
+  },
+  "scripts": {
+    "start": "npm run build",
+    "deploy": "truffle migrate",
+    "build": "rm -rf ./build && truffle compile",
+    "test": "./scripts/test.sh",
+    "ganache": "./scripts/start_ganache.sh"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.2.3",
+    "truffle": "^4.1.14"
+  }
+}
