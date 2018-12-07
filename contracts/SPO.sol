@@ -10,12 +10,12 @@ import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
  * `ERC20` functions.
  */
 contract SPO is ERC20, ERC20Detailed {
-    uint256 public constant INITIAL_SUPPLY = 10000 * (10 ** uint256(decimals()));
+    uint256 public constant TOTAL_SUPPLY = 1400000000 * (10 ** 18); // 1.4 billion SPO
 
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
     constructor () public ERC20Detailed("Sparrow Options", "SPO", 18) {
-        _mint(msg.sender, INITIAL_SUPPLY);
+        _mint(msg.sender, TOTAL_SUPPLY);
     }
 }
