@@ -4,9 +4,6 @@
   "description": "Sparrow Options Token",
   "author": "U-Zyn Chua <uzyn@zynesis.com>",
   "license": "MIT",
-  "dependencies": {
-    "openzeppelin-solidity": "^2.0.0"
-  },
   "scripts": {
     "start": "npm run build",
     "deploy": "truffle migrate",
@@ -14,9 +11,12 @@
     "test": "./scripts/test.sh",
     "ganache": "./scripts/start_ganache.sh"
   },
+  "dependencies": {
+    "openzeppelin-solidity": "^2.1.2"
+  },
   "devDependencies": {
-    "bignumber.js": "^8.0.1",
-    "ganache-cli": "^6.2.3",
-    "truffle": "^4.1.14"
+    "bignumber.js": "^8.0.2",
+    "ganache-cli": "^6.3.0",
+    "truffle": "^5.0.5"
   }
 }
