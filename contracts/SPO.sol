@@ -18,15 +18,17 @@ contract SPO is ERC20, ERC20Detailed {
    * @dev Constructor that gives msg.sender all of existing tokens.
    */
   constructor () public ERC20Detailed('Sparrow Options', 'SPO', DECIMAL_PLACES) {
-    // To be updated with actual addresses during actual distribution
-    _mint(0xCF44ccB8f27aEA1abb054d4Ae89AA00CFbda3603, 376000000 * LECONTE); // ICO
-    _mint(0xEd6D7d1Ffb258bB82A6B5Cf2C2377DCAA6A0b533, 57000000 * LECONTE); // Bonus
-    _mint(0x1fcE49D845036a54E348fe10Aa6f541DEb48547a, 70000000 * LECONTE); // Advisors
-    _mint(0xEf235b3CaAA268C4Db6215879a436Af751A0F729, 140000000 * LECONTE); // Founders
-    _mint(0x49035f3a38644d805C8AEdA5eB5fAA5DB54A5fA0, 70000000 * LECONTE); // Employees
-    _mint(0xdaBF505B241695788780b12515066746fDD65592, 337000000 * LECONTE); // Reserves Pool
-    _mint(0xEf13476b380C31CA6B1FB5C49d5CfCedcdB90b69, 140000000 * LECONTE); // Marketing
-    _mint(0xe998a139D865883C8964d34048a9acb75Eb314Ba, 210000000 * LECONTE); // Strategic Partnerships
+
+    _mint(0x506c8fB175F87C99612D5Cb62BcdDF0490934A41, 140000000 * LECONTE); // Private Sale
+    _mint(0xb1b129797cF79e750429A4c4FC793ce6A4D018F8, 100000000 * LECONTE); // Presale
+    _mint(0x8C0dfbD4B2352CC0AF81AdcCB88F50e5baA201F4, 136000000 * LECONTE); // Public Sale
+    _mint(0xa177fd7586e03013A4d205BAa6aE22A1Df8A84aa,  57000000 * LECONTE); // Bonus
+    _mint(0xBa0a1e153a88fE140676B913cc988D27c02e44dB,  70000000 * LECONTE); // Advisors
+    _mint(0xC4DB967C9592dE7f574Bc7ECA4Cbda069A77A385, 140000000 * LECONTE); // Founders
+    _mint(0xF4B13a7E1Ae1dBe30a991feD1887d21305b7d605,  70000000 * LECONTE); // Employees
+    _mint(0x883F593d0D38e7B0A86032853b1121f04a9b0b45, 337000000 * LECONTE); // Reserves
+    _mint(0xcBfDB375A83Afd91756AfB3d740Be871A9652beF, 140000000 * LECONTE); // Marketing
+    _mint(0xee08909103a90F955D9294d48f18CA6B49813534, 210000000 * LECONTE); // Partnership
 
     assert(totalSupply() == TOTAL_SUPPLY); // Ensure that exactly all total supply has been allocated
   }

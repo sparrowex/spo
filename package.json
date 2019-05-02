@@ -12,11 +12,11 @@
     "ganache": "./scripts/start_ganache.sh"
   },
   "dependencies": {
-    "openzeppelin-solidity": "^2.1.2"
+    "openzeppelin-solidity": "^2.2.0"
   },
   "devDependencies": {
-    "bignumber.js": "^8.0.2",
-    "ganache-cli": "^6.3.0",
-    "truffle": "^5.0.5"
+    "bignumber.js": "^8.1.1",
+    "ganache-cli": "^6.4.3",
+    "truffle": "^5.0.14"
   }
 }
