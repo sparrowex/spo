@@ -1,4 +1,4 @@
-const SPO = artifacts.require('./SPO.sol');
+const SPOTestnet = artifacts.require('./SPOTestnet.sol');
 const BigNumber = require('bignumber.js');
 
 let spo;
@@ -6,7 +6,7 @@ const owner = web3.eth.accounts[0];
 
 contract('SPO smart contract', () => {
   before(async () => {
-    spo = await SPO.deployed();
+    spo = await SPOTestnet.deployed();
   });
 
   it('has the correct total number of token supply and correct allocations', async () => {

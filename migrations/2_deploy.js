@@ -1,5 +1,5 @@
-const SPO = artifacts.require('./SPO.sol');
+const SPOTestnet = artifacts.require('./SPOTestnet.sol');
 
 module.exports = (deployer) => {
-  deployer.deploy(SPO);
+  deployer.deploy(SPOTestnet);
 };
