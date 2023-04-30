@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "bignumber.js": "^8.1.1",
-    "ganache-cli": "^6.4.4",
+    "ganache-cli": "^6.12.2",
     "truffle": "^5.0.22"
   }
 }
